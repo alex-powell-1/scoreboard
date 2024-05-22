@@ -7,6 +7,7 @@ document.getElementById("nateScore").textContent = nate;
 document.getElementById("willScore").textContent = will;
 
 function score(team, pointValue) {
+  fireworks();
   if (team == "lucy") {
     lucy += pointValue;
     document.getElementById("lucyScore").textContent = lucy;
@@ -17,6 +18,7 @@ function score(team, pointValue) {
     will += pointValue;
     document.getElementById("willScore").textContent = will;
   }
+  setTimeout(removeFireworks, 2000);
 }
 
 function reset() {
@@ -26,4 +28,12 @@ function reset() {
   document.getElementById("lucyScore").textContent = lucy;
   document.getElementById("nateScore").textContent = nate;
   document.getElementById("willScore").textContent = will;
+}
+
+function fireworks() {
+  document.body.style.backgroundImage = "url('fireworks.gif')";
+}
+
+function removeFireworks() {
+  document.body.style.backgroundImage = "none";
 }
