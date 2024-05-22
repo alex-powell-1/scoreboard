@@ -21,8 +21,8 @@ function score(team, pointValue) {
   setTimeout(removeFireworks, 2000);
 }
 
-const fireworksSound = new Audio("fireworks.mp3");
-const resetSound = new Audio("chime.wav");
+const fireworksSound = new Audio("sounds/fireworks.mp3");
+const resetSound = new Audio("sounds/chime.wav");
 
 function reset() {
   lucy = 0;
