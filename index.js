@@ -21,6 +21,9 @@ function score(team, pointValue) {
   setTimeout(removeFireworks, 2000);
 }
 
+const fireworksSound = new Audio("fireworks.mp3");
+const resetSound = new Audio("chime.wav");
+
 function reset() {
   lucy = 0;
   nate = 0;
@@ -28,10 +31,12 @@ function reset() {
   document.getElementById("lucyScore").textContent = lucy;
   document.getElementById("nateScore").textContent = nate;
   document.getElementById("willScore").textContent = will;
+  resetSound.play();
 }
 
 function fireworks() {
   document.body.style.backgroundImage = "url('fireworks.gif')";
+  fireworksSound.play();
 }
 
 function removeFireworks() {
