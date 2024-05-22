@@ -36,6 +36,7 @@ function reset() {
 
 function fireworks() {
   document.body.style.backgroundImage = "url('fireworks.gif')";
+  document.body.style.backgroundRepeat = "repeat";
   fireworksSound.play();
 }
 
