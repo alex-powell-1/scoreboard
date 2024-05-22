@@ -8,7 +8,8 @@ body {
 #scoreBoard {
   background-color: darkblue;
   height: 300px;
-  width: 450px;
+  width: 100%;
+  max-width: 500px;
   margin: 30px auto;
   display: flex;
   flex-direction: column;
