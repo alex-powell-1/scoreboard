@@ -1,0 +1,80 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgb(227, 253, 227);
+  text-align: center;
+}
+
+#scoreBoard {
+  background-color: darkblue;
+  height: 300px;
+  width: 450px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid grey;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px 9px rgba(0, 0, 0, 0.5);
+}
+
+#scoreSection {
+  width: 450px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: white;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+#lucy .btn:hover {
+  background-color: hotpink;
+}
+
+#nate .btn:hover {
+  background-color: blue;
+  color: white;
+}
+
+#will .btn:hover {
+  background-color: greenyellow;
+}
+
+.teamContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.teamContainer h1 {
+  color: white;
+  margin-top: 0;
+}
+
+@font-face {
+  src: url("scoreboard.ttf");
+  font-family: scoreboard;
+}
+
+.score {
+  background-color: black;
+  width: 100px;
+  height: 75px;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: scoreboard;
+}
+
+.score h2 {
+  font-size: 50px;
+  color: red;
+}

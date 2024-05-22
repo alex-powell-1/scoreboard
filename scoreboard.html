@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="./basketball_styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>POWELL POINTS</h1>
+    <div id="scoreBoard">
+      <div id="scoreSection">
+        <div id="lucy" class="teamContainer">
+          <h1>LUCY</h1>
+          <div class="score">
+            <h2 id="lucyScore"></h2>
+          </div>
+
+          <div class="buttonContainer">
+            <button class="btn" onclick="score('lucy', 1)">+1</button>
+            <button class="btn" onclick="score('lucy', 2)">+2</button>
+            <button class="btn" onclick="score('lucy', 3)">+3</button>
+          </div>
+        </div>
+
+        <div id="nate" class="teamContainer">
+          <h1>NATE</h1>
+
+          <div class="score">
+            <h2 id="nateScore"></h2>
+          </div>
+
+          <div class="buttonContainer">
+            <button class="btn" onclick="score('nate', 1)">+1</button>
+            <button class="btn" onclick="score('nate', 2)">+2</button>
+            <button class="btn" onclick="score('nate', 3)">+3</button>
+          </div>
+        </div>
+
+        <div id="will" class="teamContainer">
+          <h1>WILL</h1>
+
+          <div class="score">
+            <h2 id="willScore"></h2>
+          </div>
+
+          <div class="buttonContainer">
+            <button class="btn" onclick="score('will', 1)">+1</button>
+            <button class="btn" onclick="score('will', 2)">+2</button>
+            <button class="btn" onclick="score('will', 3)">+3</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button onclick="reset()">RESET</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
